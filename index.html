@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=IM+Fell+English+SC" rel="stylesheet">
+
+	<style type="text/css">
+	      .head{
+	          text-align: center;
+	          background-color: black;
+	          color: white;
+	          width: 100%;
+	          height: 10%;
+	      }
+	      .circleimage{ 
+	          width: 500px;
+	          height: 500px;
+	          border-radius: 50%;
+	      }
+	      .about{
+	          text-align: center;
+	      }
+
+	       body{ background-color: orangered; 
+	       }
+	       a{ font-family: 'IM Fell English SC', serif;
+	          text-decoration: none;
+	          color: black;
+	          font-style: bold;
+	          font-size: 16pt;
+	        }
+
+	   #first { 
+	        margin-left: 20%; 
+	        position: absolute;
+	        top: 159px;
+	        
+	      }
+	      #second{
+	          margin-left: 19%;
+	          position: absolute;
+	          top: 350px;
+	      }
+	      #third{
+	          margin-left: 20%;
+	          position: absolute;
+	          top: 544px;
+	      }
+
+	   #fourth{
+	          margin-left: 62%;
+	          position:absolute;
+	          top: 159px;
+	      }
+
+	   #fifth{
+	      margin-left: 70%;
+	      position:absolute;
+	      top:332px;
+	      
+	   }
+
+	   #sixth{
+	      margin-left: 70%;
+	      position: absolute;
+	      top: 544px;
+	   }
+
+	   #seventh{ margin-left: 45%;
+	      position:absolute;
+	      top: 705px;
+	   }
+
+	   #first:hover{ 
+	   font-size: 20px;
+	   background-color: white;
+	   color: orangered;
+	}
+
+	#second:hover{
+	   font-size: 20px;
+	   background-color: white;
+	   color:orangered;
+	}
+	#third:hover{
+	   font-size: 20px;
+	   background-color: white;
+	   color:orangered;
+	}
+	#fourth:hover{
+	   font-size: 20px;
+	   background-color: white;
+	  color:orangered;
+	}
+	#fifth:hover{
+	   font-size: 20px;
+	   background-color: white;
+	   color:orangered;
+	}
+	#sixth:hover{
+	   font-size: 20px;
+	   background-color: white;
+	   color: orangered;
+	}
+	#seventh:hover{
+	   font-size: 20px;
+	   background-color: white;
+	   color: orangered;
+	   
+	}
+	
+		
+	
+	header{font-family: 'IM Fell English SC';
+		margin:0;
+	text-align: center;
+	color: white;
+	background-color: rgba(0,0,0,0.71);
+	padding-top:10px; padding-bottom: 10px;
+	height: 135px;
+
+	}
+	h1{ letter-spacing: 20px;
+		font-size: 4em;
+		margin:0;
+
+	 }
+	
+
+
+	body{ font-family: arial;
+		margin: 0;
+		padding: 0;
+	}
+	.records{ 
+		letter-spacing: 20px;
+	color: white; }
+
+	#push{height: 35px;
+		width:100%;}
+
+		
+
+
+
+	</style>
+	<title>Home</title>
+</head>
+<body onload="move()">
+	<header><h1>KANYE WEST</h1>
+	<h3><a class="records" href="https://good-music.com/" target=_blank>GOOD MUSIC|</a><a class="records" href="http://www.defjam.com/" target=_blank>DEF JAM</a>
+	<a class="records" href="http://rocnation.com/" target=_blank>|ROCAFELLA</a></h3>
+	</header>
+
+<div id="push"></div>
+	<a href="thecollegedropout.html" id="first"> | The College Dropout | </a> <a href="lateregistration.html" id="second">| Late Registration | </a> <a href="graduation.html" id="third"> | Graduation | </a>
+	
+	<center>
+		<img class="circleimage" src="giphy.gif">
+	</center>
+
+	<a href="heartbreak.html" id="fourth">| 808s and Heartbreak |</a> <a href="fantasy.html" id="fifth">| My Beautiful Dark Twisted Fantasy |</a> <a href="yeezus.html" id="sixth">| Yeezus |</a> <a href="pablo.html" id="seventh">| The life of Pablo |</a> 
+	<script type="text/javascript">
+	    //created a move functions manipulating the positions of the six different elements until they reached the desired position.                
+	   function move(){
+	      var elem = document.getElementById("first");
+	      var elem2 =document.getElementById("second");
+	      var elem3 =document.getElementById("third");
+	      var elem4 = document.getElementById("fourth");
+	      var elem5 = document.getElementById("fifth");
+	      var elem6= document.getElementById("sixth");
+	      var pos = -200;
+	      var pos2 = -200;
+	      var pos3 = -300;
+	      var pos4=0;
+	      var pos5=0;
+	      var pos6=0;
+	      var id=setInterval(frame,100);
+	      var id2=setInterval(frame,100);
+	      var id3=setInterval(frame,100);
+	      var id4=setInterval(frame,100);
+	      var id5=setInterval(frame,100);
+	      var id6= setInterval(frame,100);
+	      function frame()
+	   {
+	      if(pos2<10)
+	      {
+	          pos2=pos2+1;
+	          elem2.style.left=pos2+'px';
+	      }
+	      if(pos<75)
+	      {
+	          pos=pos+1;
+	          elem.style.left=pos+'px';
+	          }
+	          if(pos3<75)
+	          {  
+	              pos3=pos3+1;
+	              elem3.style.left=pos3+'px';
+	          }
+	         if (pos4<400)
+	         { 
+	           pos4=pos4+1;
+	           elem4.style.right=pos4+'px';
+
+	         } 
+	         if(pos5<200)
+	           {pos5=pos5+1;
+	               elem5.style.right=pos5+'px';
+	           }
+	           if(pos6<350)
+	               {pos6=pos6+1;
+	                   elem6.style.right=pos6+'px';
+	               }
+
+	         }
+	      
+	   }
+
+
+	</script>
+</body>
+</html>

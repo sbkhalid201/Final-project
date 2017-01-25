@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+	.head{
+		text-align: center;
+		background-color: black;
+		color: white;
+		width: 100%;
+		height: 10%;
+	}
+	.circleimage{ 
+		width: 500px;
+		height: 500px;
+		border-radius: 50%;
+	}
+	.about{
+		text-align: center;
+	}
+
+	 body{ background-color: gray; 
+	 }
+	 a{ 
+	 	text-decoration: none;
+	 	color: black;
+	 	font-style: bold;
+	  }
+
+
+
+ #first { 
+	  margin-left: 20%; 
+	  position: absolute;
+	  top: 120px;
+	  left: -300px;
+	}
+	#second{
+		margin-left: 10%;
+		position: absolute;
+		top: 332px;
+	}
+	#third{
+		margin-left: 20%;
+		position: absolute;
+		top: 544px;
+	}
+
+#forth{
+		margin-left: 70%;
+		position:absolute;
+		top: 120px;
+	}
+
+#fifth{
+	margin-left: 70%;
+	position:absolute;
+	top:332px;
+}
+
+#sixth{
+	margin-left: 70%;
+	position: absolute;
+	top: 544px;
+}
+
+#seventh{ margin-left: 45%;
+	position:absolute;
+	top: 660px;
+}
+
+#first:hover{ font-style: italic;
+	font-size: 20px;
+	background-color: white;
+	text-decoration: underline;
+}
+
+#second:hover{font-style: italic;
+	font-size: 20px;
+	background-color: white;
+	text-decoration: underline;
+}
+#third:hover{font-style: italic;
+	font-size: 20px;
+	background-color: white;
+	text-decoration: underline;
+}
+#forth:hover{font-style: italic;
+	font-size: 20px;
+	background-color: white;
+	text-decoration: underline;
+}
+#fifth:hover{font-style: italic;
+	font-size: 20px;
+	background-color: white;
+	text-decoration: underline;
+}
+#sixth:hover{font-style: italic;
+	font-size: 20px;
+	background-color: white;
+	text-decoration: underline;
+}
+#seventh:hover{font-style: italic;
+	font-size: 20px;
+	background-color: white;
+	text-decoration: underline;
+}
+ 
+
+
+</style>
+	<title>Home</title>
+</head>
+<body onload="id()">
+
+<h1 class="head">Kanye West</h1>
+<h3 class="head"> Labels: Good music, Roc-A-Fella, and Def Jam</h3>
+<div id="first" ><a href="thecollegedropout.html">| The College Dropout |</a></div>
+<div id="second"><a href="lateregistration.html">| Late Registration |</a></div>
+
+<div id="third"><a href="graduation.html">| Gradutation |</a></div>
+
+<center><img class="circleimage" src="giphy.gif"></center>
+
+
+<div id="forth"><a href="heartbreak.html">| 808s and Heartbreak |</a></div>
+<div id="fifth"><a href="fantasy.html">| My Beautiful Dark Twisted Fantasy |</a></div>
+<div id="sixth"><a href="yeezus.html">| Yeezus |</a></div>
+<div id="seventh"><a href="pablo.html">| The life of Pablo |</a></div>
+
+<script type="text/javascript">
+				   var pos = 0;
+				   var elem = document.getElementById("first");
+				   //console.log(elem);
+				   function id() { setInterval(Move, 50);}
+							 
+						 function Move() {
+							 //var elem = document.getElementById("first");
+							 frame(500)
+							 }	
+							 
+						function frame(a) {
+							//console.log(pos);
+							if (pos >= a) {
+								console.log(pos);
+								//elem.style.left = "1500px";
+								//clearInterval(id);
+							} 
+							if(pos==35){
+							clearInterval("first")
+						}
+							else {
+								pos++;
+								elem.style.left = pos + 'px';
+							}
+						}
+
+		</script>
+</body>
+</html>
